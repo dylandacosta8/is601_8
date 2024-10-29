@@ -35,11 +35,10 @@ jobs:
     - uses: actions/login-action@v3
       name: Login to DockerHub
       with:
-        username: ${{ secrets.DH_USER }}
-        password: ${{ secrets.DH_TOKEN }}
+        username: ${{ vars.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
       with:
         push: true
         tags: dylan08/is601_8:latest
-    
