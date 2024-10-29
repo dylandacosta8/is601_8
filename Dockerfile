@@ -2,7 +2,7 @@ FROM python:alpine
 
 WORKDIR /apps/calc
 
-COPY . WORKDIR
+COPY . .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
