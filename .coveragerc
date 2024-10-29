@@ -1,0 +1,10 @@
+[run]
+branch = True
+
+[report]
+exclude_lines = 
+    COV-NA
+    logger
+    print
+    pass
+    input
