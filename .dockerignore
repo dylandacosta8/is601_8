@@ -1,0 +1,6 @@
+*.log
+.gitignore
+.md
+tests/*.py
+data/*.csv
+.github/*
